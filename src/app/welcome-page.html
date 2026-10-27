@@ -1,13 +1,12 @@
-<main class="welcome-page">
-  <section class="welcome-card" aria-labelledby="app-title">
-    <div class="brand-mark" aria-hidden="true">PD</div>
-    <p class="eyebrow">Práctica de despliegues</p>
-    <h1 id="app-title">practica-despliegues</h1>
-    <p class="welcome-message">¡Te damos la bienvenida!</p>
-    <div class="environment" aria-label="Entorno de trabajo: QA">
-      <span class="status-dot" aria-hidden="true"></span>
-      <span>Entorno de trabajo</span>
-      <strong>QA</strong>
-    </div>
+<main class="pagina">
+  <header class="cabecera">
+    <h1>{{ titulo }}</h1>
+    <p class="bienvenida">{{ bienvenida }}</p>
+  </header>
+
+  <section class="entorno">
+    <span class="etiqueta">{{ codigo }}</span>
+    <h2>{{ entorno }}</h2>
+    <p>Rama desplegada: <code>{{ rama }}</code></p>
   </section>
 </main>
